@@ -32,13 +32,13 @@ Format: starts with `10.` — bare DOI, **NOT** `https://doi.org/...` form.
 
 Verbatim from the paper PDF in `paper/`. Character-for-character. ≤ 500 chars in whole-text mode.
 
-> _Read the PDF first. Don't paraphrase from memory. See `docs/verify-before-drafting.md`._
+> SOURCE: abstract of the paper, retrieved via the OpenAlex API (2026-09-27). **Verify character-for-character against the PDF in `paper/` before publishing.**
 
 ```
-
+Climate influences tree cover globally but, at intermediate rainfall (1000 to 2500 millimeters) with mild seasonality (less than 7 months), tree cover is bimodal, and only fire differentiates between savanna and forest.
 ```
 
-Character count: ___ / 500.
+Character count: 219 / 500.
 
 <!-- field: quotation-end -->
 ### End of quotation (optional - use when quoting beginning and end of a longer passage, max. 500 characters) (textarea, optional)
@@ -57,8 +57,10 @@ phrase here. Leave empty for a single short quote.
 Why this quote matters and what the replication tests. Connect the paper's claim to the work this repo does. Don't repeat the quote.
 
 ```
-
+This is the claim we test regionally with independent, newer data: if fire, not climate alone, separates savanna from forest at intermediate rainfall, then within a mosaic in that rainfall band the share burned should fall with pre-fire biomass, and should do so within each rainfall band, not only across them. We test it in the Beni lowlands of Bolivia (CHELSA annual rainfall inside 1000–2500 mm) with ESA Biomass CCI 2023 and ESA Fire_cci 2024 burned area, joined on one equal-area HEALPix grid on the WGS84 ellipsoid (healpix-connector, GRID4EARTH). One region and one fire year: a test of consistency, not of the feedback's direction.
 ```
+
+Character count: 640 / 800.
 
 ## Publication note
 

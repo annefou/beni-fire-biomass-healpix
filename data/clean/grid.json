@@ -1,0 +1,5 @@
+{
+ "grid": "HEALPix nested, depth 11, WGS84 ellipsoid",
+ "healpix_connector": "0.1.0",
+ "rain_support": "value of the source grid box containing the cell centre (~1 km)"
+}

@@ -1,64 +1,54 @@
-# Snakefile — orchestrates the replication pipeline end-to-end.
-#
-# Replace the placeholder rules with your actual replication steps. The
-# canonical pattern is one rule per pipeline stage, and each rule wraps a
-# notebook executed via jupytext (so the notebook stays the source of truth
-# and the Snakefile just sequences them).
-#
-# Usage:
-#   snakemake --cores 1                  # run everything
-#   snakemake --cores 1 -n               # dry run
+# Snakefile — the Beni fire × biomass × rainfall replication, end to end.
+#   pixi run snakemake --cores 1        (or: pixi run run)
 
 NOTEBOOKS = "notebooks"
-DATA = "data"
-RESULTS = "results"
-FIGURES = "figures"
 
 
 rule all:
     input:
-        # Replace with your actual final artefacts:
-        f"{FIGURES}/main_result.png",
-        f"{RESULTS}/summary.csv",
+        "figures/main_result.png",
+        "results/headline.json",
 
 
-# ---------- 01: Data download ----------
-# Every replication MUST be self-contained: data is downloaded by the notebook,
-# never assumed to exist locally. See CLAUDE.md § Self-contained data.
 rule data_download:
     output:
-        f"{DATA}/raw/dataset.zip",
+        "data/raw/sources.json",
     log:
-        f"{RESULTS}/logs/01_data_download.log",
+        "results/logs/01_data_download.log",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 01_data_download.py 2>&1 | tee ../{{log}}"
+        "cd notebooks && jupytext --to notebook --execute 01_data_download.py > ../{log} 2>&1"
 
 
-# ---------- 02: Data clean ----------
 rule data_clean:
     input:
-        f"{DATA}/raw/dataset.zip",
+        "data/raw/sources.json",
     output:
-        f"{DATA}/clean/dataset.parquet",
+        "data/clean/beni_cells.parquet",
+    log:
+        "results/logs/02_data_clean.log",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 02_data_clean.py"
+        "cd notebooks && jupytext --to notebook --execute 02_data_clean.py > ../{log} 2>&1"
 
 
-# ---------- 03: Analysis ----------
 rule analysis:
     input:
-        f"{DATA}/clean/dataset.parquet",
+        "data/clean/beni_cells.parquet",
     output:
-        f"{RESULTS}/summary.csv",
+        "results/headline.json",
+        "results/summary.csv",
+    log:
+        "results/logs/03_analysis.log",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 03_analysis.py"
+        "cd notebooks && jupytext --to notebook --execute 03_analysis.py > ../{log} 2>&1"
 
 
-# ---------- 04: Figures ----------
 rule figures:
     input:
-        f"{RESULTS}/summary.csv",
+        "results/headline.json",
+        "results/summary.csv",
     output:
-        f"{FIGURES}/main_result.png",
+        "figures/main_result.png",
+    log:
+        "results/logs/04_figures.log",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 04_figures.py"
+        "cd notebooks && jupytext --to notebook --execute 04_figures.py > ../{log} 2>&1"

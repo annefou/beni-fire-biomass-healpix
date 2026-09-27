@@ -1,0 +1,174 @@
+{
+ "accessed_on": "2026-09-27",
+ "datasets": {
+  "cci_biomass": {
+   "name": "ESA Biomass CCI v7.0 above-ground biomass, 2023",
+   "doi": "10.5285/6429d1aafe1e43b9b414e4a5a7f8b903",
+   "license": "ESA CCI data policy: free use, acknowledge ESA CCI and cite the DOI"
+  },
+  "fire_cci": {
+   "name": "ESA Fire_cci SYN burned area pixel product v1.1, 2024",
+   "doi": "10.5285/d441079fc77f49fabeb41330612b252f",
+   "license": "ESA CCI data policy: free use, acknowledge ESA CCI and cite the DOI"
+  },
+  "chelsa_bio12": {
+   "name": "CHELSA v2.1 bio12 (annual precipitation), 1981\u20132010",
+   "doi": "10.16904/envidat.228",
+   "license": "CC0-1.0",
+   "url": "https://os.zhdk.cloud.switch.ch/chelsav2/GLOBAL/climatologies/1981-2010/bio/CHELSA_bio12_1981-2010_V.2.1.tif",
+   "access": "window read in 02_data_clean (not stored)"
+  }
+ },
+ "files": [
+  {
+   "file": "S10W070_AGB_2023_v7.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/biomass/data/agb/maps/v7.0/geotiff/2023/S10W070_ESACCI-BIOMASS-L4-AGB-MERGED-100m-2023-fv7.0.tif",
+   "sha256": "a35886894c35cc44200ebae409be99ddf8983b01c1f70cf51015cf6a6bf6055c",
+   "dataset": "cci_biomass"
+  },
+  {
+   "file": "fire_202401_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/01/20240101-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "14abef7620379814aefb7f8f18b5397ef0e933ae335acf0c224b1a6966050153",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202401_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/01/20240101-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "9152cf6564127107b6707dc69ce607e6247e7c50a7585d6ddbe9922afd2d9e51",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202402_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/02/20240201-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "073c3e5c8bc73ede016830671dce4516c7acac23576bb6376b57d462d4a7d39e",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202402_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/02/20240201-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "a799918862f03cb59ffb30be50aef57e29a6571fe748398c363cf1291c8c50fc",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202403_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/03/20240301-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "62fe42c0b5fb3b9c44f18e64b7425b41d431c5a37aff596a2018a2f7ed401b08",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202403_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/03/20240301-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "0582c84682463c827bf10b72a413fa6d81429f8c0ca5c3b882e30a31617b538e",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202404_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/04/20240401-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "6f6e550b15bbf74b3023c625c148fab2a7f758d38ca8d0805550c802ad8cfb66",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202404_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/04/20240401-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "e113322f53ccde80871d95d0aa56dcfe43d7b1d8bae0e4f32a27a4829135ddff",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202405_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/05/20240501-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "d02423a79347a7a2d08ff838abab47a623329c8e1e9d6a4085dd075d942de945",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202405_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/05/20240501-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "b6760fdee935e2ba0f85ff5358171cb74a83df6286abbe56fa4c7ae131027167",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202406_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/06/20240601-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "73a9a9b1b3426813c6dc42a3ebb3bb94629186b2198173f8a27a184bad0726ee",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202406_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/06/20240601-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "87b078359d71aaa9823d8bbdcbb6efe6ec901877a9cd7e885bae7af3ec00b779",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202407_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/07/20240701-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "f64ec83793464531d39a294d8ab1a2ed4acfa6863a68232d7c5e7d4ee85c211a",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202407_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/07/20240701-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "f9ba642bec27817e13787b4b505042e9c2e54e2e1eaf992a04de3b7035abd5cf",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202408_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/08/20240801-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "b9a3acef85e818ceac18e44a5bdaacf66bd99bb9fb0f99419c3fd0e04a31982a",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202408_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/08/20240801-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "675934f5df3bdafa71ba06bafc1868c0e7769d556360ece8933dd53489e58a3a",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202409_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/09/20240901-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "34e4b8b1c51504a559215b0d4fac8911394ffd61f83072311260be8f53776787",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202409_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/09/20240901-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "a049dd3a9acff38e520880839dde901b811a2d7a7124cf86f476247c0c9421f9",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202410_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/10/20241001-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "f1d12647f6a725e38b58120fe8dca9d8e9968eb247a0b81d637365593090d36f",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202410_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/10/20241001-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "dfac893ad2c28539836d7cd84ef97289a4bd4b1faf8393fe9d5efb089bca549f",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202411_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/11/20241101-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "144f2e4dbebce14ed31e7c9da535fc63108bf1b9f972ec0ff80f3a32fda73f88",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202411_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/11/20241101-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "c82810d372a898bfa28f8a23b9062dca7f5146f0452c0232372714e07a610783",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202412_JD.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/12/20241201-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-JD.tif",
+   "sha256": "8c13476bdfd59bfafced12cb650356aa14719f8b369b89fe2a06ec90b8ea6b8c",
+   "dataset": "fire_cci"
+  },
+  {
+   "file": "fire_202412_CL.tif",
+   "url": "https://dap.ceda.ac.uk/neodc/esacci/fire/data/burned_area/Sentinel3_SYN/pixel/v1.1/uncompressed/2024/12/20241201-ESACCI-L3S_FIRE-BA-SYN-AREA_2-fv1.1-CL.tif",
+   "sha256": "9344b4d7085f2ffc46eeb2ba8e208628a7c83242107681d75d79c543b9082ecc",
+   "dataset": "fire_cci"
+  }
+ ]
+}

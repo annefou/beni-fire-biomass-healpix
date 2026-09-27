@@ -1,0 +1,37 @@
+{
+ "n_cells": 10344,
+ "spearman_agb_vs_burned": -0.383,
+ "spearman_rain_vs_burned": -0.36,
+ "spearman_rain_vs_agb": 0.471,
+ "spearman_agb_vs_burned_within_rain_tercile": {
+  "drier": -0.229,
+  "middle": -0.235,
+  "wetter": -0.39
+ },
+ "mean_burned_pct_by_agb_class": {
+  "<10": 32.1,
+  "10–25": 27.3,
+  "25–50": 19.7,
+  "50–100": 13.6,
+  "100–150": 5.6,
+  "≥150": 1.4
+ },
+ "rain_tercile_bounds_mm": [
+  1825,
+  1944
+ ],
+ "in_band_1000_2500mm": {
+  "n_cells": 10262,
+  "share_of_cells_pct": 99.2,
+  "spearman_agb_vs_burned": -0.378,
+  "mean_burned_pct_by_agb_class": {
+   "<10": 32.1,
+   "10–25": 27.3,
+   "25–50": 19.7,
+   "50–100": 13.6,
+   "100–150": 5.6,
+   "≥150": 1.5
+  }
+ },
+ "spearman_note": "Spearman with average ranks for ties (many cells have zero burned share)."
+}
