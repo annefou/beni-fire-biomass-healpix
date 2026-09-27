@@ -16,7 +16,7 @@ project:
     - file: notebooks/04_figures.ipynb
     - file: nanopubs/README.md
 site:
-  title: "beni-fire-biomass-healpix"
+  title: "Fire and biomass in the Beni — a replication of Staver et al. 2011"
 # IMPORTANT: do NOT set base_url here — MyST silently ignores the key.
 # BASE_URL is set in .github/workflows/jupyter-book.yml as an env var on the
 # `myst build` step, derived from the GitHub repo name. See
