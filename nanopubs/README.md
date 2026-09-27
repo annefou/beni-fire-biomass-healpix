@@ -1,3 +1,5 @@
+**[→ Review and publish this chain on Science Live](https://platform.sciencelive4all.org/np/create/chain?draft=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fannefou%2Fbeni-fire-biomass-healpix%400c68f49403cfd4c6186263935be138f05443af34%2Fnanopubs%2Fchain-draft.json)** (opens the chain wizard pre-filled from `chain-draft.json`, commit 0c68f49).
+
 # `nanopubs/` — FORRT nanopublication chain workspace
 
 This directory holds the field-by-field drafts of the FORRT chain, plus the registry of published URIs. The chain is published manually on `https://platform.sciencelive4all.org` — Claude does not publish; Claude drafts each step in `drafts/`, you review and copy-paste into the platform UI, and the resulting URI goes into `PUBLISHED.md`.
