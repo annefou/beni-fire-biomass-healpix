@@ -1,4 +1,4 @@
-**[→ Review and publish this chain on Science Live](https://platform.sciencelive4all.org/np/create/chain?draft=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fannefou%2Fbeni-fire-biomass-healpix%400c68f49403cfd4c6186263935be138f05443af34%2Fnanopubs%2Fchain-draft.json)** (opens the chain wizard pre-filled from `chain-draft.json`, commit 0c68f49).
+**[→ Review and publish this chain on Science Live](https://platform.sciencelive4all.org/np/create/chain?draft=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fannefou%2Fbeni-fire-biomass-healpix%40892677c33fa5608b12253960239f145b5fcdeaa3%2Fnanopubs%2Fchain-draft.json)** (opens the chain wizard pre-filled from `chain-draft.json`, commit 892677c).
 
 # `nanopubs/` — FORRT nanopublication chain workspace
 
