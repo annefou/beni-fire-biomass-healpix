@@ -1,5 +1,15 @@
 cff-version: 1.2.0
-title: "beni-fire-biomass-healpix"
+title: "Fire and pre-fire biomass in the Beni savanna–forest mosaic: a replication of Staver, Archibald & Levin (2011) on WGS84 HEALPix"
+abstract: >-
+  Replication of Staver, Archibald & Levin (2011, Science), who found that at
+  intermediate rainfall (1000–2500 mm) tree cover is bimodal and only fire
+  separates savanna from forest. ESA CCI Biomass v7.0 (2023), ESA Fire_cci SYN
+  v1.1 (2024) and CHELSA bio12 are binned onto HEALPix depth 11 on the WGS84
+  ellipsoid with healpix-connector for the Beni region of Bolivia (10,344 cells).
+  The share of land burned in 2024 falls with pre-fire above-ground biomass
+  (Spearman -0.38) and within each rainfall tercile. Outcome: partially
+  supported (one region, one fire year, associational). Includes a Snakemake
+  pipeline, jupytext notebooks, an RO-Crate and a FORRT nanopublication chain.
 message: "If you use this software, please cite it as below."
 type: software
 authors:
@@ -23,15 +33,18 @@ date-released: "2026-09-27"
 # named was gone and "edit by hand" was the only path left. Two repos built from
 # this template then recorded the version DOI two different ways — one a
 # structured identifier, one a prose comment. Hence the automation.)
-doi: "{{ZENODO_DOI}}"
-identifiers:
-  - type: doi
-    value: "{{ZENODO_DOI}}"
-    description: "Concept DOI (resolves to the latest version) — cite the project"
-  # On release, the workflow adds:
+# On release, the workflow adds `doi:` and `identifiers:`:
   #   - type: doi   value: <version DOI>  "Version DOI for vX.Y.Z — pins this exact release; cite this from nanopubs"
   #   - type: swh   value: swh:1:rev:<commit>;origin=<repo>  "Software Heritage ID of the vX.Y.Z source tree"
 keywords:
+  - fire ecology
+  - savanna
+  - alternative stable states
+  - above-ground biomass
+  - burned area
+  - ESA CCI
+  - HEALPix
+  - Bolivia
   - replication
   - reproducibility
   - FORRT
@@ -43,5 +56,14 @@ references:
     authors:
       - family-names: "Staver"
         given-names: "A. Carla"
+      - family-names: "Archibald"
+        given-names: "Sally"
+      - family-names: "Levin"
+        given-names: "Simon A."
+    journal: "Science"
+    volume: "334"
+    issue: "6053"
+    start: "230"
+    end: "232"
     year: "2011"
     doi: "10.1126/science.1210465"
