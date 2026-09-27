@@ -2,13 +2,13 @@
 
 > This is a working scratchpad for the paper-analysis phase. The output of this file feeds the Quote / AIDA / Claim drafts. It is not itself a nanopub.
 
-**Reference paper:** {{PAPER_TITLE}}
+**Reference paper:** The Global Extent and Determinants of Savanna and Forest as Alternative Biome States
 
-**DOI:** {{PAPER_DOI}}
+**DOI:** 10.1126/science.1210465
 
 **Authors:** _add._
 
-**Year:** {{PAPER_YEAR}}
+**Year:** 2011
 
 ## Headline claim
 
