@@ -98,7 +98,11 @@ jobs:
 
       - name: Run pipeline
         if: steps.guard.outputs.ready == 'true'
-        run: pixi run snakemake --cores 1
+        # The raw inputs are ~1.2 GB (data/README.md), so CI starts from the
+        # committed per-cell table data/clean/beni_cells.parquet and re-runs
+        # only the analysis and figure steps. Run the full chain locally with
+        # `pixi run run`.
+        run: pixi run snakemake --cores 1 --forceall --allowed-rules analysis figures all
 
       - name: Upload results
         if: always() && steps.guard.outputs.ready == 'true'

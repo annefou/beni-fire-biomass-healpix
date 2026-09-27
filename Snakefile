@@ -44,6 +44,7 @@ rule analysis:
 
 rule figures:
     input:
+        "data/clean/beni_cells.parquet",
         "results/headline.json",
         "results/summary.csv",
     output:
