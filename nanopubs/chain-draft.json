@@ -4,7 +4,7 @@
   "chain_shape": "paper-rooted",
   "source": {
     "repository": "https://github.com/annefou/beni-fire-biomass-healpix",
-    "commit": "507163f623ecfce3018d43a325c25200eb467976",
+    "commit": "687d6593d97bd5ef7b0cc9f300b042e55ba65fb6",
     "figure": "figures/main_result.png"
   },
   "steps": [
@@ -136,6 +136,7 @@
       "prefill": {
         "outcome": "beni-fire-biomass-healpix-2024-outcome",
         "label": "Burned share falls with pre-fire biomass within rainfall bands: consistent with Staver et al. 2011, Beni 2024",
+        "repo": "https://doi.org/10.5281/zenodo.23002074",
         "date": "2026-09-27",
         "validationStatus": "https://w3id.org/sciencelive/o/terms/PartiallySupported",
         "conclusion": "Consistent with the claim, within its scope. Inside the paper's intermediate-rainfall band (99% of cells), the share of each cell that burned in 2024 falls steadily with pre-fire biomass, and it does so within each rainfall tercile, not only across them, as a fire–vegetation feedback predicts. Biomass itself is strongly skewed with a secondary high-biomass mode, compatible with alternative states. This is an association in one region and one year: it supports the regional signature of the claim, not its global extent or its causal direction.",
@@ -146,6 +147,7 @@
       "provenance": {
         "outcome": "nanopubs/drafts/05_outcome.md",
         "label": "nanopubs/drafts/05_outcome.md",
+        "repo": "CITATION.cff",
         "date": "CITATION.cff",
         "validationStatus": "nanopubs/drafts/05_outcome.md",
         "conclusion": "nanopubs/drafts/05_outcome.md",
