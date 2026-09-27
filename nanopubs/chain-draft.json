@@ -4,7 +4,7 @@
   "chain_shape": "paper-rooted",
   "source": {
     "repository": "https://github.com/annefou/beni-fire-biomass-healpix",
-    "commit": "f7c566a6afab3de6abf673d9a92d76d406a53c75",
+    "commit": "507163f623ecfce3018d43a325c25200eb467976",
     "figure": "figures/main_result.png"
   },
   "steps": [
@@ -89,12 +89,12 @@
         "deviation": "Different data (ESA CCI products, not MODIS tree cover), a single region and year instead of global data, above-ground biomass as the woody-cover variable, and burned share in one year instead of fire frequency. Seasonality and soils are not modelled; rainfall is controlled by terciles, not by a model.",
         "keywordSelection": [
           {
-            "uri": "http://www.wikidata.org/entity/Q15756581",
-            "label": "Fire Ecology"
+            "uri": "http://www.wikidata.org/entity/Q1409472",
+            "label": "fire ecology"
           },
           {
-            "uri": "http://www.wikidata.org/entity/Q11892656",
-            "label": "Savanna"
+            "uri": "http://www.wikidata.org/entity/Q42320",
+            "label": "savanna"
           },
           {
             "uri": "http://www.wikidata.org/entity/Q4736552",

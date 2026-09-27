@@ -70,20 +70,24 @@ Different data (ESA CCI products, not MODIS tree cover), a single region and yea
 <!-- field: keyword -->
 ### Search keywords (Wikidata) (search/select, optional)
 
-Provide labels (not QIDs) — the Wikidata search picks up labels.
+Labels with explicit QIDs, each checked on Wikidata (a label search alone returned the journal *Fire Ecology* and the given name *Savanna*).
 
-- Label 1: fire ecology
-- Label 2: savanna
-- Label 3: alternative stable state
-- Label 4: HEALPix
-- Label 5: remote sensing
+```
+fire ecology (Q1409472)
+savanna (Q42320)
+alternative stable state (Q4736552)
+HEALPix (Q5629401)
+remote sensing (Q199687)
+```
 
 <!-- field: discipline -->
 ### Search discipline (Wikidata) (search/select, optional)
 
 Provide labels.
 
-- Discipline label: ecology
+```
+ecology (Q7150)
+```
 
 ## Publication note
 

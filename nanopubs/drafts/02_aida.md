@@ -23,10 +23,10 @@ In the Beni savanna–forest mosaic of Bolivia, the share of land that burned in
 Predefined topic vocabulary — list the labels you intend to pick from the dropdown.
 
 ```
-fire ecology
-savanna
-alternative stable state
-remote sensing
+fire ecology (Q1409472)
+savanna (Q42320)
+alternative stable state (Q4736552)
+remote sensing (Q199687)
 ```
 
 <!-- field: project -->
