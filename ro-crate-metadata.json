@@ -99,6 +99,15 @@
         },
         {
           "@id": "nanopubs/chain-draft.json"
+        },
+        {
+          "@id": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903"
+        },
+        {
+          "@id": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f"
+        },
+        {
+          "@id": "https://doi.org/10.16904/envidat.228"
         }
       ],
       "citation": [
@@ -188,7 +197,8 @@
       "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake",
       "@type": "ComputerLanguage",
       "name": "Snakemake",
-      "url": "https://snakemake.readthedocs.io/"
+      "url": "https://snakemake.readthedocs.io/",
+      "version": "9.21.0"
     },
     {
       "@id": "pixi.toml",
@@ -359,7 +369,8 @@
       "description": "Bins raster data onto HEALPix cells on the WGS84 ellipsoid. Pinned in pixi.toml to commit 02eb52b.",
       "identifier": "https://doi.org/10.5281/zenodo.22904851",
       "url": "https://github.com/annefou/healpix-connector",
-      "softwareVersion": "0.1.0"
+      "softwareVersion": "0.1.0",
+      "version": "0.1.0"
     },
     {
       "@id": "data/raw/sources.json",
