@@ -5,40 +5,132 @@
       "@type": "CreativeWork",
       "@id": "ro-crate-metadata.json",
       "conformsTo": [
-        { "@id": "https://w3id.org/ro/crate/1.2" },
-        { "@id": "https://w3id.org/ro/wfrun/process/0.5" },
-        { "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0" }
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/wfrun/process/0.5"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+        }
       ],
-      "about": { "@id": "./" }
+      "about": {
+        "@id": "./"
+      }
     },
     {
       "@id": "./",
-      "@type": ["Dataset", "ResearchObject"],
+      "@type": [
+        "Dataset",
+        "ResearchObject"
+      ],
       "name": "beni-fire-biomass-healpix",
       "description": "Replication of Staver, Archibald & Levin (2011): does fire track pre-fire biomass in the Beni savanna-forest mosaic? ESA CCI Biomass, Fire CCI and CHELSA joined on WGS84 HEALPix with healpix-connector.",
       "datePublished": "2026-09-27",
-      "license": { "@id": "https://spdx.org/licenses/MIT" },
-      "publisher": { "@id": "https://orcid.org/0000-0002-1784-2920" },
-      "author": [{ "@id": "https://orcid.org/0000-0002-1784-2920" }],
-      "mainEntity": { "@id": "Snakefile" },
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "publisher": {
+        "@id": "https://orcid.org/0000-0002-1784-2920"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "mainEntity": {
+        "@id": "Snakefile"
+      },
       "hasPart": [
-        { "@id": "Snakefile" },
-        { "@id": "pixi.toml" },
-        { "@id": "pixi.lock" },
-        { "@id": "Dockerfile" },
-        { "@id": "notebooks/01_data_download.py" },
-        { "@id": "notebooks/02_data_clean.py" },
-        { "@id": "notebooks/03_analysis.py" },
-        { "@id": "notebooks/04_figures.py" },
-        { "@id": "paper/" },
-        { "@id": "data/" },
-        { "@id": "results/" },
-        { "@id": "figures/" },
-        { "@id": "nanopubs/PUBLISHED.md" }
+        {
+          "@id": "Snakefile"
+        },
+        {
+          "@id": "pixi.toml"
+        },
+        {
+          "@id": "pixi.lock"
+        },
+        {
+          "@id": "Dockerfile"
+        },
+        {
+          "@id": "notebooks/01_data_download.py"
+        },
+        {
+          "@id": "notebooks/02_data_clean.py"
+        },
+        {
+          "@id": "notebooks/03_analysis.py"
+        },
+        {
+          "@id": "notebooks/04_figures.py"
+        },
+        {
+          "@id": "paper/"
+        },
+        {
+          "@id": "data/"
+        },
+        {
+          "@id": "results/"
+        },
+        {
+          "@id": "figures/"
+        },
+        {
+          "@id": "nanopubs/PUBLISHED.md"
+        },
+        {
+          "@id": "data/raw/sources.json"
+        },
+        {
+          "@id": "data/clean/beni_cells.parquet"
+        },
+        {
+          "@id": "results/headline.json"
+        },
+        {
+          "@id": "results/summary.csv"
+        },
+        {
+          "@id": "figures/main_result.png"
+        },
+        {
+          "@id": "nanopubs/chain-draft.json"
+        }
       ],
       "citation": [
-        { "@id": "https://doi.org/10.1126/science.1210465" }
-      ]
+        {
+          "@id": "https://doi.org/10.1126/science.1210465"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903"
+        },
+        {
+          "@id": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f"
+        },
+        {
+          "@id": "https://doi.org/10.16904/envidat.228"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22904851"
+        }
+      ],
+      "keywords": [
+        "fire ecology",
+        "savanna",
+        "alternative stable states",
+        "HEALPix",
+        "remote sensing",
+        "ESA CCI",
+        "replication",
+        "FORRT"
+      ],
+      "spatialCoverage": "Beni savanna–forest mosaic, Bolivia (CCI tile S10W070)"
     },
     {
       "@id": "https://orcid.org/0000-0002-1784-2920",
@@ -48,12 +140,49 @@
     },
     {
       "@id": "Snakefile",
-      "@type": ["File", "SoftwareSourceCode", "ComputationalWorkflow"],
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
       "name": "Replication pipeline",
       "description": "Snakemake workflow orchestrating data download, cleaning, analysis, and figure generation.",
-      "programmingLanguage": { "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake" },
-      "input": [{ "@id": "paper/" }, { "@id": "pixi.toml" }, { "@id": "pixi.lock" }],
-      "output": [{ "@id": "results/" }, { "@id": "figures/" }, { "@id": "nanopubs/PUBLISHED.md" }]
+      "programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake"
+      },
+      "input": [
+        {
+          "@id": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903"
+        },
+        {
+          "@id": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f"
+        },
+        {
+          "@id": "https://doi.org/10.16904/envidat.228"
+        }
+      ],
+      "output": [
+        {
+          "@id": "data/raw/sources.json"
+        },
+        {
+          "@id": "data/clean/beni_cells.parquet"
+        },
+        {
+          "@id": "results/headline.json"
+        },
+        {
+          "@id": "results/summary.csv"
+        },
+        {
+          "@id": "figures/main_result.png"
+        }
+      ],
+      "softwareRequirements": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22904851"
+        }
+      ]
     },
     {
       "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake",
@@ -63,43 +192,68 @@
     },
     {
       "@id": "pixi.toml",
-      "@type": ["File", "ConfigurationFile"],
+      "@type": [
+        "File",
+        "ConfigurationFile"
+      ],
       "name": "Pixi workspace manifest (declared dependencies, features, tasks)",
       "encodingFormat": "application/toml"
     },
     {
       "@id": "pixi.lock",
-      "@type": ["File", "ConfigurationFile"],
+      "@type": [
+        "File",
+        "ConfigurationFile"
+      ],
       "name": "Pixi per-platform lockfile (every package pinned to an exact build hash)",
       "encodingFormat": "application/yaml"
     },
     {
       "@id": "Dockerfile",
-      "@type": ["File", "ConfigurationFile"],
+      "@type": [
+        "File",
+        "ConfigurationFile"
+      ],
       "name": "Container build specification",
       "encodingFormat": "text/x-dockerfile"
     },
     {
       "@id": "notebooks/01_data_download.py",
-      "@type": ["File", "SoftwareSourceCode", "Notebook"],
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "Notebook"
+      ],
       "name": "01 — Data download",
       "programmingLanguage": "Python"
     },
     {
       "@id": "notebooks/02_data_clean.py",
-      "@type": ["File", "SoftwareSourceCode", "Notebook"],
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "Notebook"
+      ],
       "name": "02 — Data clean",
       "programmingLanguage": "Python"
     },
     {
       "@id": "notebooks/03_analysis.py",
-      "@type": ["File", "SoftwareSourceCode", "Notebook"],
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "Notebook"
+      ],
       "name": "03 — Analysis",
       "programmingLanguage": "Python"
     },
     {
       "@id": "notebooks/04_figures.py",
-      "@type": ["File", "SoftwareSourceCode", "Notebook"],
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "Notebook"
+      ],
       "name": "04 — Figures",
       "programmingLanguage": "Python"
     },
@@ -111,21 +265,45 @@
     {
       "@id": "data/",
       "@type": "Dataset",
-      "name": "Downloaded input data (gitignored; populated by 01_data_download.py)"
+      "name": "Input data (raw files gitignored; provenance and per-cell table committed)",
+      "hasPart": [
+        {
+          "@id": "data/raw/sources.json"
+        },
+        {
+          "@id": "data/clean/beni_cells.parquet"
+        }
+      ]
     },
     {
       "@id": "results/",
       "@type": "Dataset",
-      "name": "Analysis output artefacts"
+      "name": "Analysis output artefacts",
+      "hasPart": [
+        {
+          "@id": "results/headline.json"
+        },
+        {
+          "@id": "results/summary.csv"
+        }
+      ]
     },
     {
       "@id": "figures/",
       "@type": "Dataset",
-      "name": "Curated figures used in the Jupyter Book"
+      "name": "Curated figures used in the Jupyter Book",
+      "hasPart": [
+        {
+          "@id": "figures/main_result.png"
+        }
+      ]
     },
     {
       "@id": "nanopubs/PUBLISHED.md",
-      "@type": ["File", "TextObject"],
+      "@type": [
+        "File",
+        "TextObject"
+      ],
       "name": "Registry of published FORRT nanopub URIs",
       "description": "URIs of the published Quote / AIDA / FORRT Claim / Replication Study / Replication Outcome / CiTO Citation steps."
     },
@@ -134,6 +312,104 @@
       "@type": "ScholarlyArticle",
       "name": "The Global Extent and Determinants of Savanna and Forest as Alternative Biome States",
       "datePublished": "2011"
+    },
+    {
+      "@id": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903",
+      "@type": "Dataset",
+      "name": "ESA Biomass CCI v7.0 above-ground biomass, 2023 (tile S10W070)",
+      "identifier": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903",
+      "publisher": {
+        "@id": "https://climate.esa.int/"
+      },
+      "conditionsOfAccess": "ESA CCI data policy: free use, acknowledge ESA CCI and cite the DOI"
+    },
+    {
+      "@id": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f",
+      "@type": "Dataset",
+      "name": "ESA Fire_cci SYN burned area pixel product v1.1, 2024 (monthly JD/CL)",
+      "identifier": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f",
+      "publisher": {
+        "@id": "https://climate.esa.int/"
+      },
+      "conditionsOfAccess": "ESA CCI data policy: free use, acknowledge ESA CCI and cite the DOI"
+    },
+    {
+      "@id": "https://doi.org/10.16904/envidat.228",
+      "@type": "Dataset",
+      "name": "CHELSA v2.1 bio12 (annual precipitation), 1981–2010",
+      "identifier": "https://doi.org/10.16904/envidat.228",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC0-1.0"
+      }
+    },
+    {
+      "@id": "https://climate.esa.int/",
+      "@type": "Organization",
+      "name": "ESA Climate Change Initiative"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC0-1.0",
+      "@type": "CreativeWork",
+      "name": "CC0 1.0"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22904851",
+      "@type": "SoftwareApplication",
+      "name": "healpix-connector",
+      "description": "Bins raster data onto HEALPix cells on the WGS84 ellipsoid. Pinned in pixi.toml to commit 02eb52b.",
+      "identifier": "https://doi.org/10.5281/zenodo.22904851",
+      "url": "https://github.com/annefou/healpix-connector",
+      "softwareVersion": "0.1.0"
+    },
+    {
+      "@id": "data/raw/sources.json",
+      "@type": [
+        "File"
+      ],
+      "name": "Input provenance: URLs, access date and SHA-256 of every downloaded file",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@id": "data/clean/beni_cells.parquet",
+      "@type": [
+        "File"
+      ],
+      "name": "Per-cell table: HEALPix depth 11 (WGS84) cells with biomass, burned share and rainfall",
+      "encodingFormat": "application/vnd.apache.parquet",
+      "description": "10,344 cells. Committed so CI can rerun the analysis without the ~1.2 GB raw download."
+    },
+    {
+      "@id": "results/headline.json",
+      "@type": [
+        "File"
+      ],
+      "name": "Headline statistics",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@id": "results/summary.csv",
+      "@type": [
+        "File"
+      ],
+      "name": "Burned share by biomass class",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@id": "figures/main_result.png",
+      "@type": [
+        "File",
+        "ImageObject"
+      ],
+      "name": "Burned share in 2024 by pre-fire biomass class",
+      "encodingFormat": "image/png"
+    },
+    {
+      "@id": "nanopubs/chain-draft.json",
+      "@type": [
+        "File"
+      ],
+      "name": "Pre-filled FORRT nanopublication chain (Science Live wizard input)",
+      "encodingFormat": "application/json"
     }
   ]
 }
