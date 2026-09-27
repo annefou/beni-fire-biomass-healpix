@@ -13,10 +13,10 @@ abstract: >-
 message: "If you use this software, please cite it as below."
 type: software
 authors:
-  - family-names: "Fouilloux"
-    given-names: "Anne"
-    orcid: "https://orcid.org/0000-0002-1784-2920"
-    affiliation: "LifeWatch ERIC"
+- family-names: "Fouilloux"
+  given-names: "Anne"
+  orcid: "https://orcid.org/0000-0002-1784-2920"
+  affiliation: "LifeWatch ERIC"
 repository-code: "https://github.com/annefou/beni-fire-biomass-healpix"
 license: MIT
 version: "0.1.0"
@@ -37,33 +37,44 @@ date-released: "2026-09-27"
   #   - type: doi   value: <version DOI>  "Version DOI for vX.Y.Z — pins this exact release; cite this from nanopubs"
   #   - type: swh   value: swh:1:rev:<commit>;origin=<repo>  "Software Heritage ID of the vX.Y.Z source tree"
 keywords:
-  - fire ecology
-  - savanna
-  - alternative stable states
-  - above-ground biomass
-  - burned area
-  - ESA CCI
-  - HEALPix
-  - Bolivia
-  - replication
-  - reproducibility
-  - FORRT
-  - nanopublication
-  - Science-Live
+- fire ecology
+- savanna
+- alternative stable states
+- above-ground biomass
+- burned area
+- ESA CCI
+- HEALPix
+- Bolivia
+- replication
+- reproducibility
+- FORRT
+- nanopublication
+- Science-Live
 references:
-  - type: article
-    title: "The Global Extent and Determinants of Savanna and Forest as Alternative Biome States"
-    authors:
-      - family-names: "Staver"
-        given-names: "A. Carla"
-      - family-names: "Archibald"
-        given-names: "Sally"
-      - family-names: "Levin"
-        given-names: "Simon A."
-    journal: "Science"
-    volume: "334"
-    issue: "6053"
-    start: "230"
-    end: "232"
-    year: "2011"
-    doi: "10.1126/science.1210465"
+- type: article
+  title: "The Global Extent and Determinants of Savanna and Forest as Alternative Biome States"
+  authors:
+  - family-names: "Staver"
+    given-names: "A. Carla"
+  - family-names: "Archibald"
+    given-names: "Sally"
+  - family-names: "Levin"
+    given-names: "Simon A."
+  journal: "Science"
+  volume: "334"
+  issue: "6053"
+  start: "230"
+  end: "232"
+  year: "2011"
+  doi: "10.1126/science.1210465"
+doi: 10.5281/zenodo.23002073
+identifiers:
+- type: doi
+  value: 10.5281/zenodo.23002073
+  description: Concept DOI (resolves to the latest version) — cite the project
+- type: doi
+  value: 10.5281/zenodo.23002074
+  description: Version DOI for v0.1.0 — pins this exact release; cite this from nanopubs
+- type: swh
+  value: swh:1:rev:23e71996ca1b8e101baaa40acfe701dfca798295;origin=https://github.com/annefou/beni-fire-biomass-healpix
+  description: Software Heritage ID of the v0.1.0 source tree

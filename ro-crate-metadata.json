@@ -139,7 +139,12 @@
         "replication",
         "FORRT"
       ],
-      "spatialCoverage": "Beni savanna–forest mosaic, Bolivia (CCI tile S10W070)"
+      "spatialCoverage": "Beni savanna–forest mosaic, Bolivia (CCI tile S10W070)",
+      "identifier": [
+        "https://doi.org/10.5281/zenodo.23002074",
+        "swh:1:rev:23e71996ca1b8e101baaa40acfe701dfca798295;origin=https://github.com/annefou/beni-fire-biomass-healpix"
+      ],
+      "version": "0.1.0"
     },
     {
       "@id": "https://orcid.org/0000-0002-1784-2920",

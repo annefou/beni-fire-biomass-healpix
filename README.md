@@ -4,7 +4,7 @@
 [![Jupyter Book](https://github.com/annefou/beni-fire-biomass-healpix/actions/workflows/jupyter-book.yml/badge.svg)](https://annefou.github.io/beni-fire-biomass-healpix/)
 [![Docker](https://github.com/annefou/beni-fire-biomass-healpix/actions/workflows/docker.yml/badge.svg)](https://github.com/annefou/beni-fire-biomass-healpix/pkgs/container/beni-fire-biomass-healpix)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/{{ZENODO_DOI}}.svg)]({{ZENODO_DOI}})
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23002073.svg)](https://doi.org/10.5281/zenodo.23002073)
 [![FAIR4RS](https://img.shields.io/badge/FAIR4RS-conformant-brightgreen)](docs/fair4rs-checklist.md)
 [![FORRT](https://img.shields.io/badge/FORRT-replication-blue)](https://forrt.org/)
 [![Science Live](https://img.shields.io/badge/Science%20Live-nanopub%20chain-purple)](nanopubs/PUBLISHED.md)
@@ -116,7 +116,7 @@ For lower-level nanopub work — retraction, superseding, batch publishing — s
 
 If you use this work, please cite both:
 
-- This software: [`CITATION.cff`](CITATION.cff) → DOI [{{ZENODO_DOI}}]({{ZENODO_DOI}})
+- This software: [`CITATION.cff`](CITATION.cff) → DOI [10.5281/zenodo.23002073](https://doi.org/10.5281/zenodo.23002073)
 - The original paper: [10.1126/science.1210465](https://doi.org/10.1126/science.1210465)
 
 ## Acknowledgements

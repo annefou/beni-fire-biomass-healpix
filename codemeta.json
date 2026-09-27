@@ -8,14 +8,21 @@
   "dateModified": "2026-09-27",
   "license": "https://spdx.org/licenses/MIT",
   "codeRepository": "https://github.com/annefou/beni-fire-biomass-healpix",
-  "identifier": "{{ZENODO_DOI}}",
-  "@id": "{{ZENODO_DOI}}",
+  "identifier": [
+    "https://doi.org/10.5281/zenodo.23002073",
+    "https://doi.org/10.5281/zenodo.23002074",
+    "swh:1:rev:23e71996ca1b8e101baaa40acfe701dfca798295;origin=https://github.com/annefou/beni-fire-biomass-healpix"
+  ],
+  "@id": "https://doi.org/10.5281/zenodo.23002073",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "Python",
     "version": "3.12"
   },
-  "operatingSystem": ["Linux", "macOS"],
+  "operatingSystem": [
+    "Linux",
+    "macOS"
+  ],
   "author": [
     {
       "@type": "Person",
