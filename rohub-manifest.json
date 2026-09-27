@@ -1,0 +1,239 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        }
+      ],
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "ResearchObject"
+      ],
+      "name": "Fire and pre-fire biomass in the Beni savanna–forest mosaic: a replication of Staver, Archibald & Levin (2011) on WGS84 HEALPix",
+      "description": "Replication of Staver, Archibald & Levin (2011, Science): at intermediate rainfall, only fire separates savanna from forest. ESA CCI Biomass v7.0 (2023), ESA Fire_cci SYN v1.1 (2024) and CHELSA bio12 are joined on HEALPix depth 11 (WGS84) with healpix-connector for the Beni savanna–forest mosaic, Bolivia (10,344 cells). The share of land burned in 2024 falls with pre-fire biomass (Spearman -0.38), also within each rainfall tercile. Outcome: partially supported. This research object aggregates the code, Zenodo release, notebooks, input datasets, source paper and (once published) the FORRT nanopublication chain.",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "datePublished": "2026-09-27 20:05:51.629282+00:00",
+      "dateCreated": "2026-09-27 20:05:51.629282+00:00",
+      "dateModified": "2026-09-27 20:05:51.629282+00:00",
+      "hasPart": [
+        {
+          "@id": "https://github.com/annefou/beni-fire-biomass-healpix"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23002073"
+        },
+        {
+          "@id": "https://annefou.github.io/beni-fire-biomass-healpix/"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/01_data_download.py"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/02_data_clean.py"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/03_analysis.py"
+        },
+        {
+          "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/04_figures.py"
+        },
+        {
+          "@id": "https://doi.org/10.1126/science.1210465"
+        },
+        {
+          "@id": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903"
+        },
+        {
+          "@id": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f"
+        },
+        {
+          "@id": "https://doi.org/10.16904/envidat.228"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22904851"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23002074"
+        }
+      ],
+      "identifier": "https://doi.org/10.5281/zenodo.23002073",
+      "citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23002073"
+        }
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "keywords": [
+        "fire ecology",
+        "savanna",
+        "alternative stable states",
+        "HEALPix",
+        "ESA CCI",
+        "Bolivia",
+        "replication",
+        "FORRT"
+      ]
+    },
+    {
+      "@id": "https://github.com/annefou/beni-fire-biomass-healpix",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#WebService"
+      ],
+      "name": "Source code repository",
+      "contentUrl": "https://github.com/annefou/beni-fire-biomass-healpix"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.23002073",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#Dataset"
+      ],
+      "name": "Zenodo concept DOI — citable software snapshot",
+      "contentUrl": "https://doi.org/10.5281/zenodo.23002073"
+    },
+    {
+      "@id": "https://annefou.github.io/beni-fire-biomass-healpix/",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#WebService"
+      ],
+      "name": "Jupyter Book — rendered narrative",
+      "contentUrl": "https://annefou.github.io/beni-fire-biomass-healpix/"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/01_data_download.py",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "https://w3id.org/ro/terms/earth-science#JupyterNotebook"
+      ],
+      "name": "Notebook — 01 Data Download",
+      "contentUrl": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/01_data_download.py",
+      "encodingFormat": "text/x-python"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/02_data_clean.py",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "https://w3id.org/ro/terms/earth-science#JupyterNotebook"
+      ],
+      "name": "Notebook — 02 Data Clean",
+      "contentUrl": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/02_data_clean.py",
+      "encodingFormat": "text/x-python"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/03_analysis.py",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "https://w3id.org/ro/terms/earth-science#JupyterNotebook"
+      ],
+      "name": "Notebook — 03 Analysis",
+      "contentUrl": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/03_analysis.py",
+      "encodingFormat": "text/x-python"
+    },
+    {
+      "@id": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/04_figures.py",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "https://w3id.org/ro/terms/earth-science#JupyterNotebook"
+      ],
+      "name": "Notebook — 04 Figures",
+      "contentUrl": "https://raw.githubusercontent.com/annefou/beni-fire-biomass-healpix/refs/tags/v0.1.0/notebooks/04_figures.py",
+      "encodingFormat": "text/x-python"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://doi.org/10.1126/science.1210465",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/dc/terms/BibliographicResource"
+      ],
+      "name": "Source paper — Staver, Archibald & Levin (2011) Science 334:230–232",
+      "contentUrl": "https://doi.org/10.1126/science.1210465"
+    },
+    {
+      "@id": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#Dataset"
+      ],
+      "name": "Input data — ESA Biomass CCI v7.0 above-ground biomass",
+      "contentUrl": "https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903"
+    },
+    {
+      "@id": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#Dataset"
+      ],
+      "name": "Input data — ESA Fire_cci SYN burned area v1.1",
+      "contentUrl": "https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f"
+    },
+    {
+      "@id": "https://doi.org/10.16904/envidat.228",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#Dataset"
+      ],
+      "name": "Input data — CHELSA v2.1 climatologies (bio12)",
+      "contentUrl": "https://doi.org/10.16904/envidat.228"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22904851",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#Dataset"
+      ],
+      "name": "Software — healpix-connector v0.1.0",
+      "contentUrl": "https://doi.org/10.5281/zenodo.22904851"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.23002074",
+      "@type": [
+        "File",
+        "http://purl.org/wf4ever/wf4ever#Resource",
+        "http://purl.org/wf4ever/wf4ever#Dataset"
+      ],
+      "name": "Zenodo version DOI — v0.1.0 exactly",
+      "contentUrl": "https://doi.org/10.5281/zenodo.23002074"
+    }
+  ]
+}

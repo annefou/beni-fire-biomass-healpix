@@ -69,3 +69,4 @@ If you use this work, please cite both:
 
 - This software: [`CITATION.cff`](CITATION.cff) → DOI [10.5281/zenodo.23002073](https://doi.org/10.5281/zenodo.23002073).
 - The original paper: [10.1126/science.1210465](https://doi.org/10.1126/science.1210465).
+- Research Object (ROHub): [w3id.org/ro-id/dd0e8130-7e86-4002-8bb2-b5e85f08e75e](https://w3id.org/ro-id/dd0e8130-7e86-4002-8bb2-b5e85f08e75e) — one index of the code, release, notebooks, input datasets, paper and nanopubs.
