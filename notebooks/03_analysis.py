@@ -71,6 +71,21 @@ out["in_band_1000_2500mm"] = {
     "spearman_agb_vs_burned": round(float(np.corrcoef(band.agb_2023_mg_ha.rank(), band.burned_share_2024.rank())[0, 1]), 3),
     "mean_burned_pct_by_agb_class": {k: round(100 * float(v), 1) for k, v in band.groupby("agb_class", observed=False).burned_share_2024.mean().items()}}
 out["spearman_note"] = "Spearman with average ranks for ties (many cells have zero burned share)."
+# %% [markdown]
+# ## Is pre-fire biomass bimodal? (supplementary)
+# Staver et al. report bimodal *tree cover* at intermediate rainfall. As a supplementary, weaker check we ask
+# whether *biomass* is bimodal here, with Sarle's bimodality coefficient (BC > 0.555 suggests bimodality; BC is
+# inflated by strong skew, so it is indicative only) and the histogram counts.
+
+# %%
+from scipy.stats import kurtosis, skew
+a = band.agb_2023_mg_ha.to_numpy(); n = a.size
+g1, g2 = skew(a), kurtosis(a)
+bc = (g1 ** 2 + 1) / (g2 + 3 * (n - 1) ** 2 / ((n - 2) * (n - 3)))
+hist_edges = [0, 10, 20, 30, 40, 50, 60, 80, 100, 120, 140, 160, 180, 200, 250, 300, 400]
+h, _ = np.histogram(a, bins=hist_edges)
+out["agb_bimodality_in_band"] = {"bimodality_coefficient": round(float(bc), 3), "skewness": round(float(g1), 2),
+                                  "histogram_edges_mg_ha": hist_edges, "histogram_counts": [int(x) for x in h]}
 (RES / "headline.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))
 print(json.dumps(out, indent=1, ensure_ascii=False))
 table

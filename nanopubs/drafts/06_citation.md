@@ -12,7 +12,7 @@
 URI of the Outcome published in step 05. Pull from `nanopubs/PUBLISHED.md`.
 
 ```
-
+<URI of step 05, from nanopubs/PUBLISHED.md>
 ```
 
 ### List citations (repeatable group, required ≥1)
@@ -32,7 +32,7 @@ For question-rooted chains where there is no original paper to confirm/dispute, 
 > **Note:** `replicates` is NOT in the Science Live dropdown (despite existing in upstream CiTO). When citing a notebook/tutorial that was directly reused, use **`credits`** instead.
 
 ```
-
+qualifies
 ```
 
 ##### DOI or other URL of the cited work (text input)
@@ -45,7 +45,9 @@ https://doi.org/10.1126/science.1210465
 
 If the Outcome cites methods papers, related replications, or upstream tools, add them here.
 
-- _Type: ___ → URL: ___
+- Type: usesDataFrom → URL: https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903
+- Type: usesDataFrom → URL: https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f
+- Type: usesMethodIn → URL: https://doi.org/10.5281/zenodo.22904851 (healpix-connector)
 
 ## Publication note
 

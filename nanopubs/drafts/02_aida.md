@@ -14,7 +14,7 @@ Atomic, Independent, Declarative, Absolute. One empirical finding. Must end with
 > _If your draft AIDA contains "and" linking two distinct findings, split into two AIDA nanopubs._
 
 ```
-
+In the Beni savanna–forest mosaic of Bolivia, the share of land that burned in 2024 decreased with pre-fire above-ground biomass within each rainfall tercile.
 ```
 
 <!-- field: topic -->
@@ -23,7 +23,10 @@ Atomic, Independent, Declarative, Absolute. One empirical finding. Must end with
 Predefined topic vocabulary — list the labels you intend to pick from the dropdown.
 
 ```
-
+fire ecology
+savanna
+alternative stable state
+remote sensing
 ```
 
 <!-- field: project -->
@@ -45,8 +48,9 @@ Pull the URI from `nanopubs/PUBLISHED.md`.
 
 DOIs/URLs of datasets that ground the AIDA claim.
 
-- _DOI 1: ___
-- _DOI 2: ___
+- DOI 1: https://doi.org/10.5285/6429d1aafe1e43b9b414e4a5a7f8b903 (ESA Biomass CCI v7.0)
+- DOI 2: https://doi.org/10.5285/d441079fc77f49fabeb41330612b252f (ESA Fire_cci SYN v1.1)
+- DOI 3: https://doi.org/10.16904/envidat.228 (CHELSA v2.1)
 
 <!-- field: publication -->
 ### Supported by other publications (text input, optional)

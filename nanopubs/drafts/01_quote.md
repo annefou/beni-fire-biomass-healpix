@@ -57,10 +57,10 @@ phrase here. Leave empty for a single short quote.
 Why this quote matters and what the replication tests. Connect the paper's claim to the work this repo does. Don't repeat the quote.
 
 ```
-This is the claim we test regionally with independent, newer data: if fire, not climate alone, separates savanna from forest at intermediate rainfall, then within a mosaic in that rainfall band the share burned should fall with pre-fire biomass, and should do so within each rainfall band, not only across them. We test it in the Beni lowlands of Bolivia (CHELSA annual rainfall inside 1000–2500 mm) with ESA Biomass CCI 2023 and ESA Fire_cci 2024 burned area, joined on one equal-area HEALPix grid on the WGS84 ellipsoid (healpix-connector, GRID4EARTH). One region and one fire year: a test of consistency, not of the feedback's direction.
+The abstract's key testable statement: within intermediate rainfall (1000–2500 mm) and mild seasonality, climate alone does not decide whether a place is savanna or forest; fire does. It implies a fire–vegetation feedback, so in such landscapes fire should be rare where woody biomass is high and frequent where it is low, independently of rainfall. The sentence also delimits where the claim applies, which makes it checkable region by region.
 ```
 
-Character count: 640 / 800.
+Character count: 444 / 500.
 
 ## Publication note
 

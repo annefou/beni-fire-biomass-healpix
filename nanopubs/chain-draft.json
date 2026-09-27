@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "kind": "forrt-chain-draft",
+  "chain_shape": "paper-rooted",
+  "source": {
+    "repository": "https://github.com/annefou/beni-fire-biomass-healpix",
+    "commit": "f7c566a6afab3de6abf673d9a92d76d406a53c75",
+    "figure": "figures/main_result.png"
+  },
+  "steps": [
+    {
+      "step": "01_quote",
+      "template_key": "ANNOTATE_QUOTATION",
+      "template_uri": "https://w3id.org/np/RA24onqmqTMsraJ7ypYFOuckmNWpo4Zv5gsLqhXt7xYPU",
+      "prefill": {
+        "paper": "10.1126/science.1210465",
+        "quotation": "Climate influences tree cover globally but, at intermediate rainfall (1000 to 2500 millimeters) with mild seasonality (less than 7 months), tree cover is bimodal, and only fire differentiates between savanna and forest.",
+        "comment": "The abstract's key testable statement: within intermediate rainfall (1000–2500 mm) and mild seasonality, climate alone does not decide whether a place is savanna or forest; fire does. It implies a fire–vegetation feedback, so in such landscapes fire should be rare where woody biomass is high and frequent where it is low, independently of rainfall. The sentence also delimits where the claim applies, which makes it checkable region by region."
+      },
+      "provenance": {
+        "paper": "CITATION.cff",
+        "quotation": "nanopubs/drafts/01_quote.md",
+        "comment": "nanopubs/drafts/01_quote.md"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "02_aida",
+      "template_key": "AIDA_SENTENCE",
+      "template_uri": "https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA",
+      "prefill": {
+        "aida": "In the Beni savanna–forest mosaic of Bolivia, the share of land that burned in 2024 decreased with pre-fire above-ground biomass within each rainfall tercile.",
+        "topic": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q1409472",
+            "label": "fire ecology"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q42320",
+            "label": "savanna"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q4736552",
+            "label": "Alternative stable state"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q199687",
+            "label": "remote sensing"
+          }
+        ]
+      },
+      "provenance": {
+        "aida": "nanopubs/drafts/02_aida.md",
+        "topic": "nanopubs/drafts/02_aida.md + Wikidata"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "03_claim",
+      "template_key": "FORRT_CLAIM",
+      "template_uri": "https://w3id.org/np/RAZWyM8D16ya3S1zhCvrG1f0iSpd9-8onVWp0FTvvX7LQ",
+      "prefill": {
+        "claim": "beni-burned-share-falls-with-biomass-2024",
+        "label": "Beni 2024: burned share falls with pre-fire biomass within rainfall terciles",
+        "forrtType": "https://w3id.org/sciencelive/o/terms/descriptive_pattern-FORRT-Claim",
+        "source": "https://doi.org/10.1126/science.1210465"
+      },
+      "provenance": {
+        "claim": "nanopubs/drafts/03_claim.md",
+        "label": "nanopubs/drafts/03_claim.md",
+        "forrtType": "nanopubs/drafts/03_claim.md",
+        "source": "CITATION.cff"
+      },
+      "manual": [
+        "forrtType"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "04_study",
+      "template_key": "FORRT_REPLICATION",
+      "template_uri": "https://w3id.org/np/RAuLEjPp-4dTvPwMkfHggTto1CgjIftiGRAgHlyeEonjQ",
+      "prefill": {
+        "study": "beni-fire-biomass-healpix-2024",
+        "label": "Fire versus pre-fire biomass within rainfall bands, Beni lowlands 2024, on WGS84 HEALPix",
+        "type": "https://w3id.org/sciencelive/o/terms/Replication-Study",
+        "scope": "The regional signature of the fire–vegetation feedback that Staver et al. (2011) invoke for intermediate rainfall: whether, inside that rainfall band, burning is concentrated where woody biomass is low, independently of rainfall. In scope: one savanna–forest mosaic (Beni lowlands, Bolivia), one fire year (2024), pre-fire biomass instead of tree cover. Out of scope: the global extent of bimodality, soils, seasonality, and the direction of causality.",
+        "methodology": "ESA Biomass CCI v7.0 above-ground biomass (2023), ESA Fire_cci SYN v1.1 burned area (monthly, 2024) and CHELSA v2.1 annual precipitation are binned onto the same HEALPix grid on the WGS84 ellipsoid (nested, depth 11, cells of about 3.2 km) with healpix-connector 0.1.0. A 300 m fire pixel counts as burned if any 2024 month records a day of burn; never-observed and non-burnable pixels are excluded. Per cell: burned share, mean biomass (cells over 90% covered) and rainfall. Cells are grouped into six biomass classes within rainfall terciles; Spearman rank correlations (average ranks for ties) are computed overall, within each tercile, and for cells inside 1000–2500 mm. Supplementary: Sarle's bimodality coefficient of biomass.",
+        "deviation": "Different data (ESA CCI products, not MODIS tree cover), a single region and year instead of global data, above-ground biomass as the woody-cover variable, and burned share in one year instead of fire frequency. Seasonality and soils are not modelled; rainfall is controlled by terciles, not by a model.",
+        "keywordSelection": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q15756581",
+            "label": "Fire Ecology"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q11892656",
+            "label": "Savanna"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q4736552",
+            "label": "Alternative stable state"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q5629401",
+            "label": "HEALPix"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q199687",
+            "label": "remote sensing"
+          }
+        ],
+        "disciplineSelection": {
+          "uri": "http://www.wikidata.org/entity/Q7150",
+          "label": "ecology"
+        }
+      },
+      "provenance": {
+        "study": "nanopubs/drafts/04_study.md",
+        "label": "nanopubs/drafts/04_study.md",
+        "type": "nanopubs/drafts/04_study.md",
+        "scope": "nanopubs/drafts/04_study.md",
+        "methodology": "nanopubs/drafts/04_study.md",
+        "deviation": "nanopubs/drafts/04_study.md",
+        "keywordSelection": "nanopubs/drafts/04_study.md + Wikidata",
+        "disciplineSelection": "nanopubs/drafts/04_study.md + Wikidata"
+      },
+      "manual": [
+        "type"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "05_outcome",
+      "template_key": "FORRT_REPLICATION_OUTCOME",
+      "template_uri": "https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE",
+      "prefill": {
+        "outcome": "beni-fire-biomass-healpix-2024-outcome",
+        "label": "Burned share falls with pre-fire biomass within rainfall bands: consistent with Staver et al. 2011, Beni 2024",
+        "date": "2026-09-27",
+        "validationStatus": "https://w3id.org/sciencelive/o/terms/PartiallySupported",
+        "conclusion": "Consistent with the claim, within its scope. Inside the paper's intermediate-rainfall band (99% of cells), the share of each cell that burned in 2024 falls steadily with pre-fire biomass, and it does so within each rainfall tercile, not only across them, as a fire–vegetation feedback predicts. Biomass itself is strongly skewed with a secondary high-biomass mode, compatible with alternative states. This is an association in one region and one year: it supports the regional signature of the claim, not its global extent or its causal direction.",
+        "evidence": "10,344 cells (HEALPix depth 11, WGS84). Mean burned share by biomass class: <10 Mg/ha 32.1%, 10–25 Mg/ha 27.3%, 25–50 Mg/ha 19.7%, 50–100 Mg/ha 13.6%, 100–150 Mg/ha 5.6%, ≥150 Mg/ha 1.4%. Spearman biomass vs burned share: overall -0.383; within rainfall terciles drier -0.229, middle -0.235, wetter -0.39 (tercile bounds 1825 and 1944 mm). In the 1000–2500 mm band: 10,262 cells (99.2%), Spearman -0.378. Rainfall vs biomass 0.471. Biomass bimodality coefficient 0.723 (skewness 1.76).",
+        "confidenceLevel": "https://w3id.org/sciencelive/o/terms/Moderate",
+        "limitations": "One region and one fire year (2024); an association that cannot separate 'fire keeps biomass low' from 'low biomass burns more'. Burned share in one year stands in for fire frequency, and biomass for tree cover. Seasonality and soils, part of the original claim's conditions, are not tested. The bimodality coefficient is inflated by skew and is indicative only. Rainfall is a 1981–2010 climatology."
+      },
+      "provenance": {
+        "outcome": "nanopubs/drafts/05_outcome.md",
+        "label": "nanopubs/drafts/05_outcome.md",
+        "date": "CITATION.cff",
+        "validationStatus": "nanopubs/drafts/05_outcome.md",
+        "conclusion": "nanopubs/drafts/05_outcome.md",
+        "evidence": "nanopubs/drafts/05_outcome.md",
+        "confidenceLevel": "nanopubs/drafts/05_outcome.md",
+        "limitations": "nanopubs/drafts/05_outcome.md"
+      },
+      "manual": [
+        "validationStatus",
+        "confidenceLevel"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "06_citation",
+      "template_key": "CITATION_CITO",
+      "template_uri": "https://w3id.org/np/RA43F9EoOuzF0xoNUnCMNyFsfIqlsuWDdPHCnN0wCdCAw",
+      "prefill": {
+        "st02": [
+          {
+            "cites": "http://purl.org/spar/cito/qualifies",
+            "cited": "https://doi.org/10.1126/science.1210465"
+          }
+        ]
+      },
+      "provenance": {
+        "st02": "cites = validation status (see 05_outcome); cited = CITATION.cff references[article]"
+      },
+      "published_uri": null
+    }
+  ],
+  "carry_forward": [
+    {
+      "from": "01_quote",
+      "into": "02_aida",
+      "field": "project"
+    },
+    {
+      "from": "02_aida",
+      "into": "03_claim",
+      "field": "aida"
+    },
+    {
+      "from": "03_claim",
+      "into": "04_study",
+      "field": "claim"
+    },
+    {
+      "from": "04_study",
+      "into": "05_outcome",
+      "field": "study"
+    },
+    {
+      "from": "05_outcome",
+      "into": "06_citation",
+      "field": "work"
+    }
+  ]
+}

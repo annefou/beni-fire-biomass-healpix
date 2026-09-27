@@ -33,5 +33,46 @@
    "≥150": 1.5
   }
  },
- "spearman_note": "Spearman with average ranks for ties (many cells have zero burned share)."
+ "spearman_note": "Spearman with average ranks for ties (many cells have zero burned share).",
+ "agb_bimodality_in_band": {
+  "bimodality_coefficient": 0.723,
+  "skewness": 1.76,
+  "histogram_edges_mg_ha": [
+   0,
+   10,
+   20,
+   30,
+   40,
+   50,
+   60,
+   80,
+   100,
+   120,
+   140,
+   160,
+   180,
+   200,
+   250,
+   300,
+   400
+  ],
+  "histogram_counts": [
+   3021,
+   1379,
+   1060,
+   734,
+   552,
+   428,
+   537,
+   388,
+   353,
+   350,
+   429,
+   319,
+   148,
+   169,
+   254,
+   141
+  ]
+ }
 }

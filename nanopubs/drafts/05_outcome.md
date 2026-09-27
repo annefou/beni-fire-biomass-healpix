@@ -12,7 +12,7 @@
 Slug. Use kebab-case.
 
 ```
-
+beni-fire-biomass-healpix-2024-outcome
 ```
 
 <!-- field: label -->
@@ -21,7 +21,7 @@ Slug. Use kebab-case.
 Descriptive title.
 
 ```
-
+Burned share falls with pre-fire biomass within rainfall bands: consistent with Staver et al. 2011, Beni 2024
 ```
 
 <!-- field: study -->
@@ -30,7 +30,7 @@ Descriptive title.
 URI of the Replication Study published in step 04. Pull from `nanopubs/PUBLISHED.md`.
 
 ```
-
+<URI of step 04, from nanopubs/PUBLISHED.md>
 ```
 
 <!-- field: repo -->
@@ -71,7 +71,7 @@ This dropdown maps to the CiTO intention in step 06: Validated → `confirms`, P
 - [ ] contradicted
 - [ ] inconclusive
 - [ ] not tested
-- [ ] partially supported
+- [x] partially supported
 - [ ] validated
 
 <!-- field: confidenceLevel -->
@@ -80,12 +80,12 @@ This dropdown maps to the CiTO intention in step 06: Validated → `confirms`, P
 _Vocabulary not yet captured._
 
 ```
-
+moderate
 ```
 
 - [ ] high - Strong evidence, mostly agrees with original
 - [ ] low - Limited evidence, significant disagreement
-- [ ] moderate - Adequate evidence, partial agreement
+- [x] moderate - Adequate evidence, partial agreement
 - [ ] very high - Extensive evidence, high agreement with original
 - [ ] very low - Minimal evidence, major disagreement
 
@@ -95,7 +95,7 @@ _Vocabulary not yet captured._
 Substantive interpretation. Headline comparison: replication's number vs the paper's number, sign + significance.
 
 ```
-
+Consistent with the claim, within its scope. Inside the paper's intermediate-rainfall band (99% of cells), the share of each cell that burned in 2024 falls steadily with pre-fire biomass, and it does so within each rainfall tercile, not only across them, as a fire–vegetation feedback predicts. Biomass itself is strongly skewed with a secondary high-biomass mode, compatible with alternative states. This is an association in one region and one year: it supports the regional signature of the claim, not its global extent or its causal direction.
 ```
 
 <!-- field: evidence -->
@@ -104,7 +104,7 @@ Substantive interpretation. Headline comparison: replication's number vs the pap
 Numerical results, test statistics, model coefficients. Read directly from `results/`.
 
 ```
-
+10,344 cells (HEALPix depth 11, WGS84). Mean burned share by biomass class: <10 Mg/ha 32.1%, 10–25 Mg/ha 27.3%, 25–50 Mg/ha 19.7%, 50–100 Mg/ha 13.6%, 100–150 Mg/ha 5.6%, ≥150 Mg/ha 1.4%. Spearman biomass vs burned share: overall -0.383; within rainfall terciles drier -0.229, middle -0.235, wetter -0.39 (tercile bounds 1825 and 1944 mm). In the 1000–2500 mm band: 10,262 cells (99.2%), Spearman -0.378. Rainfall vs biomass 0.471. Biomass bimodality coefficient 0.723 (skewness 1.76).
 ```
 
 <!-- field: limitations -->
@@ -113,7 +113,7 @@ Numerical results, test statistics, model coefficients. Read directly from `resu
 Honest caveats. If the result is partial or contradicted, say so plainly. Don't overclaim.
 
 ```
-
+One region and one fire year (2024); an association that cannot separate 'fire keeps biomass low' from 'low biomass burns more'. Burned share in one year stands in for fire frequency, and biomass for tree cover. Seasonality and soils, part of the original claim's conditions, are not tested. The bimodality coefficient is inflated by skew and is indicative only. Rainfall is a 1981–2010 climatology.
 ```
 
 ## Publication note
